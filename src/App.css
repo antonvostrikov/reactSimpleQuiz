@@ -2,37 +2,88 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.game {
+  width: 800px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.game-title {
+  background: #fff;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game-title h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.variant {
+  list-style: none;
+  background: #fff;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+}
+
+.variant:hover {
+  transition: .7s;
+  background: #5a9cfa;
+  color: #fff;
+}
+
+
+.list-variants {
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+
+.progress-out {
+  width: 100%;
+  height: 30px;
+  background: #5a9cfa;
+  border-radius: 5px;
+}
+
+.progress-in {
+  background: #69db80;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.result {
+  background: #fff;
+  width: 500px;
+  height: 125px;
+  border-radius: 5px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.result-title p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.result-button button {
+  background: none;
+  border: none;
+}
+
+.result-button button a {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  background: #5a9cfa;
+  border: none;
+  width: 210px;
+  height: 40px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
 }
